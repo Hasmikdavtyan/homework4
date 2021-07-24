@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+ //Task 1
+  /*  
+var a = prompt() 
+const myFunc = (b)=>{
+    let num;
+   if(isNaN(b)){
+       alert("this is not a number")
+   } else{
+     num = Math.pow(b,2)
+     alert(` ${b}**2 ==${num}`)
+   }
+}
+
+myFunc(a)
+*/
+
+// Task2
+/*
+for (var i = 0; i<=5; i++){
+ var b;
+ let num = Math.random() * 11
+ if (num >=0 && num<=5){
+    console.log(`the random number is ${num}`)
+    b=  Math.ceil(num)
+     console.log(` this is the number after math.ceil: ${b}`)
+
+ } else {
+   console.log(`the random number is ${num}`)
+    b = Math.floor(num)
+   console.log(` this is the number after math.floor: ${b}`)
+ }
+ 
+  }
+*/
+// Task 3
+/*
+let word = prompt()
+let myWord = word.trim()
+const myFunc= (x)=>{
+ let lastChar = x.length- 1
+myNumber = x[lastChar].replace( x[lastChar], x[lastChar].toUpperCase())
+modifedWord = x.slice(0,lastChar ) + myNumber
+  
+ alert(modifedWord)
+}
+
+myFunc(myWord)
+*/
+// Task 4
+/*
+var myWord = prompt().trim()
+var word=""
+const myFunc= (x)=>{
+  for (var i= 0; i<=(x.length-1); i++){
+   let index = 0
+    index = x.indexOf(x[i])
+    lastIndex = x.lastIndexOf(x[i])
+    /*if( index!=  lastIndex){                         // երբ մերը կրկնվող տարրեր կան այս կոդը չի նորմալ չի աշխատում
+      for(var j =0; j<=lastIndex; j++){
+        var newIndex;
+        newIndex = x.indexOf(x[j], index+1)
+        if( newIndex% 2==0){
+        if (newIndex ==0){
+            continue
+        }
+        word = word + x[newIndex]
+       // console.log(word)
+        
+    }
+   
+  }
+  alert(word)
+       
+
+      }*/
+    
+    console.log(x[i])
+    console.log(index )
+   
+    if( index% 2==0){
+        if (index ==0){
+            continue
+        }
+        word = word + x[index]
+       // console.log(word)
+        
+    }
+   
+  }
+  alert(word)
+}
+
+myFunc(myWord)
+
+*/
+// task 5
+/*
+const ranDom = (min, max)=>{
+  return   Math.floor(Math.random() * (max-min))+ min
+ }
+
+ 
+var num = ""
+var str = ""
+var newSum =""
+for (var i =48; i<=122; i++){
+   str = str + String.fromCodePoint(i)
+   var num = str.slice(0, 10)+ str.slice(17,43)+str.slice(49,75)
+}
+
+ console.log(num)
+ 
+for (var i =0; i<5; i++){
+var text =( num[ranDom(0,62)])
+ newSum +=  text
+console.log(newSum)
+} 
+
+var a = prompt(`${newSum}`)
+
+const check = (x,  newSum)=>{
+  if (x== newSum){
+      alert(true)
+  } else {
+  alert(false)
+}
+}
+
+check(a,  newSum)
+*/
+ 
+ 
+    </script>
+</body>
+</html>
